@@ -1,8 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-const ListGroup = (props) => {
-  const { items, onItemSelect, textProperty, valueProperty, selectedItem } =
-    props;
+const ListGroup = ({
+  items,
+  onItemSelect,
+  textProperty,
+  valueProperty,
+  selectedItem,
+}) => {
+  // const { items, onItemSelect, textProperty, valueProperty, selectedItem } = props; we can directly call the objects from props while initialization as above
   return (
     <ul className="list-group">
       {items.map((item) => (
